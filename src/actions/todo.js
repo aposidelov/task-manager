@@ -23,6 +23,7 @@ export default {
             type: 'WILL_EDIT_TITLE',
             payload:{
                title: true,
+               description: false,
                id
             }
             
@@ -43,6 +44,7 @@ export default {
             type: 'WILL_EDIT_BODY',
             payload:{
                description: true,
+               title: false,
                id
             }
             

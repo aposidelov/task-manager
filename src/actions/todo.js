@@ -1,3 +1,10 @@
+
+const createdNow = () => {
+    const date= new Date();
+    const createdAt= `${date.getFullYear()}-${date.getMonth()+1}-${date.getDate()}`;
+    return createdAt
+};
+
 export default {
     add: (data) => {
         const {title, description}= data;
@@ -7,7 +14,7 @@ export default {
                     id:  Math.floor( Math.random() * 10000000 + Math.random() * 1000 ),
                     title,
                     description,
-                    created_at:  Date.now()
+                    created_at: createdNow() 
                 }
         }
     },
@@ -61,3 +68,4 @@ export default {
         }
     },
 };
+

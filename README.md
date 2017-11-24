@@ -2,10 +2,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## description
 
 <p>A simple React/Redux app .</p>
-Just for test.
-Used:
-'react-router-redux' v.5,
-'redux-thunk'
+<p>Just for test.</p>
+<p>Used:</p>
+<p>'react-router-redux' v.5,</p>
+<p>'redux-thunk'</p>
 
 ## Available Scripts
 

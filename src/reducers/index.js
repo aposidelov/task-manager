@@ -1,11 +1,13 @@
-import { combineReducers } from "redux";
-import {todo, edit} from "./todoList";
-import { reducer as formReducer } from 'redux-form';
+import { combineReducers } from 'redux';
+import { tasks, taskHandling, sendTask } from './tasks';
+import { routerReducer } from 'react-router-redux';
+
 
 const rootReducer = combineReducers({
-  todo,
-  edit,
-  form: formReducer
+    routerReducer,
+    tasks,
+    taskHandling,
+    sendTask
 });
 
 export default rootReducer;

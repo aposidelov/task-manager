@@ -1,7 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 ## description
 
-A simple React/Redux app .
+<p>A simple React/Redux app .</p>
 Just for test.
 Used:
 'react-router-redux' v.5,

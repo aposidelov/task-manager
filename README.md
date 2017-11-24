@@ -8,8 +8,8 @@ In the folder ../mocks is Todo generator.
 
 ## dependencies
 
-  "babel-polyfill": "^6.26.0",
-  "react": "^16.0.0",
+  #"babel-polyfill": "^6.26.0",
+  #"react": "^16.0.0",
   "react-bootstrap": "^0.31.5",
   "react-dom": "^16.0.0",
   "react-scripts": "1.0.16",

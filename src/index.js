@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import registerServiceWorker from './registerServiceWorker';
 
-import {Provider} from 'react-redux';
+import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
-import {composeWithDevTools} from 'redux-devtools-extension';
+import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
 
 import createHistory from 'history/createBrowserHistory';
@@ -23,8 +23,8 @@ export const store = createStore(
 
 
 ReactDOM.render(
-    <Provider store = {store}>
-        <ConnectedRouter history = {history}>  
+    <Provider store={store}>
+        <ConnectedRouter history={history}>  
            <Routes/>
         </ConnectedRouter>   
     </Provider>, 

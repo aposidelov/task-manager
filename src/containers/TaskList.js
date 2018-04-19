@@ -6,7 +6,7 @@ import { push as pushRoute } from 'react-router-redux';
 
 
 
-const TaskList = ({tasks, selectTask}) => {
+const TaskList = ({ tasks, selectTask }) => {
 
     const taskForVew = tasks.map((item, i) => {
         const {
@@ -20,8 +20,8 @@ const TaskList = ({tasks, selectTask}) => {
             tags = []
         } = item;
 
-        let nameStyle = {color: 'blue', cursor: 'pointer'};
-        if (is_high_priority) nameStyle = {...nameStyle, color: 'red'};
+        let nameStyle = { color: 'blue', cursor: 'pointer' };
+        if (is_high_priority) nameStyle = { ...nameStyle, color: 'red' };
         
         const tagList = tags.join(', ');
 
@@ -39,11 +39,11 @@ const TaskList = ({tasks, selectTask}) => {
 
         if (id && obj_status === 'active') {
             return (
-                <tr key = {id}>
+                <tr key={id}>
                     <td>{i}</td>
                     <td 
-                        style = {nameStyle}
-                        onClick = {() => selectTask(id)}
+                        style={nameStyle}
+                        onClick={ () => selectTask(id) }
                     >
                         {name}
                     </td>

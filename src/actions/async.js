@@ -31,7 +31,7 @@ export const send = () => {
     }
 };
 
-export const success = ({id, name}, status, statusText) => {
+export const success = ({ id, name }, status, statusText) => {
     return {
         type: SENT_SUCCESS,
         payload: {
@@ -67,7 +67,7 @@ export const sendToServer = data => dispatch => {
     dispatch(send());
     return fetch(url, put(data))
     .then(response => {
-        const {status, statusText} = response;
+        const { status, statusText } = response;
         if (status === 200 || status === 204){
             dispatch(success(data, status, statusText));
             dispatch(action.endEdit());
@@ -81,6 +81,5 @@ export const sendToServer = data => dispatch => {
     .catch(err => {
         console.log(err.message);
     }); 
-
 };
 

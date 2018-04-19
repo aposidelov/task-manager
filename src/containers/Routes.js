@@ -8,8 +8,8 @@ import Task from '../containers/Task';
 const Routes = () => {
   return (
     <div>
-      <Route exact path = '/' component = {TaskList}/>
-      <Route path = '/:taskId' component = {Task}/>
+      <Route exact path="/" component={TaskList}/>
+      <Route path="/:taskId" component={Task}/>
     </div>
   )
 };
